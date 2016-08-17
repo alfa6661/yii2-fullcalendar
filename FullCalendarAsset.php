@@ -1,4 +1,5 @@
 <?php
+
 namespace alfa6661\widgets;
 
 use Yii;
@@ -6,46 +7,47 @@ use yii\web\AssetBundle;
 
 /**
  * @author Alfa Adhitya <alfa2159@gmail.com>
+ *
  * @link http://www.lab-informatika.com/
  */
 class FullCalendarAsset extends AssetBundle
 {
-
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $sourcePath = '@bower/fullcalendar/dist';
     /**
-     * calendar language
+     * calendar language.
+     *
      * @var string ISO2 code for the wished display language
      */
-    public $language = NULL;
-    
+    public $language = null;
+
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $css = [
         'fullcalendar.min.css',
     ];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $js = [
-        'fullcalendar.js',        
+        'fullcalendar.js',
         'lang-all.js',
-    ];
-    
-    /**
-     * @inheritdoc
-     */
-    public $depends = [
-        'yii\web\YiiAsset',
-        'alfa6661\widgets\MomentAsset'
     ];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
+     */
+    public $depends = [
+        'yii\web\YiiAsset',
+        'alfa6661\widgets\MomentAsset',
+    ];
+
+    /**
+     * {@inheritdoc}
      */
     public function registerAssetFiles($view)
     {

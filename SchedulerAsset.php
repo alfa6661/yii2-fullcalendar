@@ -1,38 +1,39 @@
 <?php
+
 namespace alfa6661\widgets;
 
-use Yii;
 use yii\web\AssetBundle;
 
 /**
  * @author Alfa Adhitya <alfa2159@gmail.com>
+ *
  * @link http://www.lab-informatika.com/
  */
 class SchedulerAsset extends AssetBundle
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $sourcePath = '@bower/fullcalendar-scheduler/dist';
-    
+
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $css = [
         'scheduler.min.css',
     ];
-    
+
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $js = [
-        'scheduler.js'
+        'scheduler.js',
     ];
-    
+
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $depends = [
-        'alfa6661\widgets\FullCalendarAsset'
+        'alfa6661\widgets\FullCalendarAsset',
     ];
 }
